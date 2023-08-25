@@ -8,5 +8,5 @@ document.querySelector(".certification").addEventListener("click", function() {
 });
 
 document.querySelector(".view-resume-btn").addEventListener("click", function() {
-    window.open("/resume/JavedIqbalResume.pdf", "_blank");
+    window.open("resume/JavedIqbalResume.pdf", "_blank");
 });
