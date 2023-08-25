@@ -1,0 +1,257 @@
+body {
+    margin: 0;
+    text-align: center;
+    color: #40514E;
+    font-family: 'Merriweather', serif;
+    background-color: #f8f8f8;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 70px;
+    background-color: #35A29F;
+    position: fixed;
+    left: 0;
+    right: 0;
+    z-index: 1;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0 23px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.15s;
+}
+
+nav ul li a:hover {
+    color: rgb(168, 238, 247);
+}
+
+nav .left {
+    font-size: 1.3rem;
+    color: #f8f8f8;
+}
+
+h1 {
+    margin: 30px auto 0 auto;
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66BFBF;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: normal;
+    padding-bottom: 10px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+}
+
+p {
+    color: black;
+    line-height: 1.2;
+}
+
+.it {
+    text-decoration: underline;
+    text-decoration-color:#35A29F;
+}
+
+.top-container {
+    background-color: #E4F9F5;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.top-container img {
+    width: 40%;
+    margin: 50px 0;
+}
+
+.middle-container .certification, .view-resume-btn {
+    background: #11CDD4;
+    background-image: -webkit-linear-gradient(top, #11CDD4, #11999e);
+    background-image: -moz-linear-gradient(top, #11CDD4, #11999e);
+    background-image: -ms-linear-gradient(top, #11CDD4, #11999e);
+    background-image: -o-linear-gradient(top, #11CDD4, #11999e);
+    background-image: linear-gradient(to bottom, #11CDD4, #11999e);
+    -webkit-border-radius: 8;
+    -moz-border-radius: 8;
+    border-radius: 8px;
+    font-family: 'Montserrat', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    margin: 0 5px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.15s, color 0.15s;
+}
+
+.middle-container .certification:hover, .view-resume-btn:hover {
+    background: #ffffff;
+    color: #11CDD4;
+}
+
+.middle-container .download {
+    padding: 10px 39.5px;
+}
+
+hr {
+    /* border: 6px dotted #EAF6F6; */
+    border: 6px dotted #1abc9c;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
+}
+
+.middle-container {
+    margin: 100px 0;
+}
+
+.profile-picture {
+    background-color: lightblue;
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    border: 3px solid #11999E;
+    object-fit: cover;
+}
+
+.intro {
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.horizontal-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    align-items: center;
+}
+
+.degree-img {
+    width: 30%;
+    height: 219px;
+    float: left;
+    margin-right: 150px;
+    object-fit: cover;
+}
+
+.skills-img {
+    width: 30%;
+    height: 160px;
+    float: right;
+    object-fit: contain;
+}
+
+.sngpl-img {
+    width: 30%;
+    height: 277px;
+    float: left;
+    margin-right: 110px;
+}
+
+.lan-image {
+    width: 30%;
+    float: right;
+    margin-left: 120px;
+    height: 247px;
+}
+
+.brains-img {
+    width: 30%;
+    float: left;
+    margin-right: 165px;
+}
+
+.bottom-container {
+    background-color: #66BFBF;
+    padding: 50px 0 20px;
+}
+
+.bottom-container .pipe {
+    color:#11999E;
+    visibility: hidden;
+}
+
+.copyright {
+    color: #EAF6F6;
+    font-size: 0.75rem;
+    padding: 20px 0;
+}
+
+a {
+    color: #11999E;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 15px;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+a:hover {
+    color: #EAF6F6;
+}
+
+.social-icon {
+    color: #11999E;
+    margin-right: -15px;
+    transition: color 0.15s;
+}
+
+.social-icon:hover {
+    color: #f8f8f8;
+}
+
+.name {
+    font-family: 'Sacramento', cursive;
+    font-size: 5.625rem;
+    color: #66BFBF;
+}
+
+@media screen and (max-width: 768px) {
+    .middle-container {
+        text-align: center;
+    }
+    .left {
+        margin-left: 50px;
+    }
+    .middle-container .certification, .view-resume-btn {
+        margin: 5px 0;
+    }
+    .intro {
+        width: 80%;
+    }
+    .top-container img {
+        width: 60%;
+    }
+    .degree-img, .skills-img, .sngpl-img, .lan-image, .brains-img {
+        /* display: inline-block; */
+        width: 80%;
+        object-fit: contain;
+        margin-bottom: 20px;
+        margin-left: 0;
+        margin-right: 20px;
+        float: left;
+    }
+}
