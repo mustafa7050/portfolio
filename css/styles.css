@@ -1,4 +1,22 @@
-body {
+.custom-navbar {
+    background-color: rgb(53, 162, 159); /* Your desired background color */
+    font-family: 'Merriweather', serif;
+}
+
+.custom-padding {
+    margin-left: 50px;
+}
+
+ul li .white {
+    color: white;
+    padding-right: 50px;
+}
+
+ul li .white:hover {
+    color: rgb(168, 238, 247);
+}
+
+main {
     margin: 0;
     text-align: center;
     color: #40514E;
@@ -6,78 +24,40 @@ body {
     background-color: #f8f8f8;
 }
 
-nav {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 70px;
-    background-color: #35A29F;
-    position: fixed;
-    left: 0;
-    right: 0;
-    z-index: 1;
-}
-
-nav ul {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-nav ul li {
-    list-style: none;
-    margin: 0 23px;
-}
-
-nav ul li a {
-    text-decoration: none;
-    color: white;
-    transition: color 0.15s;
-}
-
-nav ul li a:hover {
-    color: rgb(168, 238, 247);
-}
-
-nav .left {
-    font-size: 1.3rem;
-    color: #f8f8f8;
-}
-
-h1 {
+.top-container h1 {
     margin: 30px auto 0 auto;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
     color: #66BFBF;
+    font-weight: bold;
 }
 
-h2 {
+.top-container h2 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.5rem;
     color: #66BFBF;
     font-weight: normal;
     padding-bottom: 10px;
+    margin: 33.20px 0;
 }
 
-h3 {
+.middle-container h2 {
     font-family: 'Montserrat', sans-serif;
     color: #11999E;
+    margin: 33.20px 0;
 }
 
-p {
-    color: black;
-    line-height: 1.2;
-}
-
-.it {
-    text-decoration: underline;
-    text-decoration-color:#35A29F;
+.middle-container hr {
+    border: 6px dotted #1abc9c;
+    border-bottom: none;
+    width: 5%;
+    margin: 100px auto;
 }
 
 .top-container {
     background-color: #E4F9F5;
     padding-top: 100px;
     padding-bottom: 50px;
-    position: relative;
 }
 
 .top-container img {
@@ -85,7 +65,18 @@ p {
     margin: 50px 0;
 }
 
-.middle-container .certification, .view-resume-btn {
+.middle-container {
+    margin: 100px 0;
+}
+
+.middle-container h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.5rem;
+    color: #66BFBF;
+    font-weight: 500;
+}
+
+.middle-container .certification, .view-resume-btn, .contact-me .btn {
     background: #11CDD4;
     background-image: -webkit-linear-gradient(top, #11CDD4, #11999e);
     background-image: -moz-linear-gradient(top, #11CDD4, #11999e);
@@ -106,25 +97,13 @@ p {
     transition: background 0.15s, color 0.15s;
 }
 
-.middle-container .certification:hover, .view-resume-btn:hover {
+.middle-container .certification:hover, .view-resume-btn:hover, .contact-me .btn:hover {
     background: #ffffff;
     color: #11CDD4;
 }
 
 .middle-container .download {
     padding: 10px 39.5px;
-}
-
-hr {
-    /* border: 6px dotted #EAF6F6; */
-    border: 6px dotted #1abc9c;
-    border-bottom: none;
-    width: 5%;
-    margin: 100px auto;
-}
-
-.middle-container {
-    margin: 100px 0;
 }
 
 .profile-picture {
@@ -136,7 +115,7 @@ hr {
     object-fit: cover;
 }
 
-.intro {
+.middle-container .intro {
     width: 30%;
     margin: auto;
     text-align: center;
@@ -148,41 +127,6 @@ hr {
     margin: 100px auto;
     text-align: left;
     align-items: center;
-}
-
-.degree-img {
-    width: 30%;
-    height: 219px;
-    float: left;
-    margin-right: 150px;
-    object-fit: cover;
-}
-
-.skills-img {
-    width: 30%;
-    height: 160px;
-    float: right;
-    object-fit: contain;
-}
-
-.sngpl-img {
-    width: 30%;
-    height: 277px;
-    float: left;
-    margin-right: 110px;
-}
-
-.lan-image {
-    width: 30%;
-    float: right;
-    margin-left: 120px;
-    height: 247px;
-}
-
-.brains-img {
-    width: 30%;
-    float: left;
-    margin-right: 165px;
 }
 
 .bottom-container {
@@ -201,7 +145,7 @@ hr {
     padding: 20px 0;
 }
 
-a {
+main a {
     color: #11999E;
     font-family: 'Montserrat', sans-serif;
     margin: 0 15px;
@@ -229,29 +173,112 @@ a:hover {
     color: #66BFBF;
 }
 
-@media screen and (max-width: 768px) {
-    .middle-container {
-        text-align: center;
+@media (max-width: 1028px) {
+    .top-container h1 {
+        font-size: 4rem;
+        margin-top: 55px;
     }
-    .left {
-        margin-left: 50px;
-    }
-    .middle-container .certification, .view-resume-btn {
-        margin: 5px 0;
-    }
-    .intro {
-        width: 80%;
+    .top-container h2 {
+        font-size: 2rem;
     }
     .top-container img {
         width: 60%;
     }
-    .degree-img, .skills-img, .sngpl-img, .lan-image, .brains-img {
-        /* display: inline-block; */
-        width: 80%;
-        object-fit: contain;
-        margin-bottom: 20px;
-        margin-left: 0;
-        margin-right: 20px;
-        float: left;
+    .middle-container .intro {
+        width: 73%;
     }
+    .middle-container .certification, .view-resume-btn {
+        margin: 5px 0;
+    }
+    .middle-container hr {
+        width: 15%;
+    }
+    main {
+        margin: 0;
+        padding: 0;
+    }
+    .horizontal-row p {
+        width: 100%;
+    }
+    .horizontal-row .degree-img {
+        width: 100%;
+        margin-bottom: 20px;  
+        padding-right: 12%;
+    }
+    .horizontal-row .skills-img {
+        width: 80%;
+        margin-bottom: 40px;
+        float: left;
+        padding-right: 25px;
+    }
+    .horizontal-row .sngpl-img {
+        width: 100%;
+    }
+    .horizontal-row .lan-image {
+        width: 100%;
+        margin-bottom: 20px;
+        height: 50%;
+    }
+    .horizontal-row .brains-img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+.horizontal-row h3 {
+    font-family: 'Montserrat', sans-serif;
+    color: #11999E;
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.horizontal-row {
+    width: 50%;
+    margin: 100px auto;
+    text-align: left;
+    align-items: center;
+}
+
+.horizontal-row p {
+    margin: 5px 0;
+}
+
+.degree-img {
+    width: 30%;
+    height: 233px;
+    float: left;
+    margin-right: 135px;
+    object-fit: cover;
+}
+
+.skills-img {
+    width: 20%;
+    height: 140px;
+    float: right;
+    object-fit: contain;
+}
+
+.sngpl-img {
+    width: 30%;
+    height: 321px;
+    float: left;
+    margin-right: 110px;
+}
+
+.lan-image {
+    width: 30%;
+    float: right;
+    margin-left: 120px;
+    height: 247px;
+}
+
+.brains-img {
+    width: 30%;
+    float: left;
+    margin-right: 165px;
 }
